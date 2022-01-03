@@ -16,17 +16,18 @@
         </div>
         
         <div class="menu--area">
-            <div class="menu--mobile">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
             <nav>
-                <a href="">cardápio</a>
-                <a href="">galeria de fotos</a>
-                <a href="">contato</a>
-                <a href="">Dicas do Chefe</a>
+                <a href="#cardapio">cardápio</a>
+                <a href="#fotos">galeria de fotos</a>
+                <a href="#contato">contato</a>
+                <a href="#dicas">Dicas do Chefe</a>
             </nav>
+        </div>
+
+        <div class="menu--mobile" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
     </header>
 
@@ -37,7 +38,7 @@
         </div>  
     </main>
 
-    <section class="menu--flavors">
+    <section class="menu--flavors" id="cardapio">
         <div class="flavors--area">
             <img src="./assets/images/cardápio.jpg">
         </div>
@@ -71,7 +72,7 @@
         </div>
     </section>
 
-    <section class="photos--area">
+    <section class="photos--area" id="fotos">
 
         <div class="photos">
             <div class="photo--area">
@@ -115,22 +116,22 @@
         
     </section>
 
-    <section class="social">
+    <section class="social" id="contato">
         <div class="social--area">
-            <a href=""><img src="./assets/icons/instagram.png"></a>
-            <p>MrBrownie@instagram</p>
+            <a href="https://instagram.com/mr.browniedorock?utm_medium=copy_link" target="_blank"><img src="./assets/icons/instagram.png"></a>
+            <p>mr.browniedorock</p>
         </div>
         <div class="social--area">
             <a href=""><img src="./assets/icons/facebook.png"></a>
             <p>MrBrownie@facebook</p>
         </div>
         <div class="social--area">
-            <a href=""><img src="./assets/icons/whatsapp.png"></a>
-            <p>19 - 9999-9999 (Luis Campos)</p>
+            <a href="https://api.whatsapp.com/send?phone=+55 19 99380-3148&text=Olá%20tem%20Brownie%20do%20Rock%20hj?" target="_blank"><img src="./assets/icons/whatsapp.png"></a>
+            <p>19 99380-3148 (Luis Campos)</p>
         </div>
     </section>
 
-    <section class="tricks--area">
+    <section class="tricks--area" id="dicas">
         
         <div class="container--rgba">
             <div class="tricks">
@@ -153,20 +154,24 @@
             </div>
             <div class="trick--music">
                 <div class="trick--music--area">
-                    <a><img src="./assets/icons/spotify.png"></a>
+                    <a href="https://open.spotify.com/playlist/6jbdM0Es8NwfDy9Vvjbyzv?si=XA0w8voZS7ySLmplzBtNHQ&utm_source=copy-link" target="_blank"><img src="./assets/icons/spotify.png"></a>
                     <p>E pra finalizar, não esqueça de apreciar seu brownie com um bom Rock'in Roll!</p>
-                    <a href=""><p>MrBrownie.spotfy.list</p></a>
+                    <a href="https://open.spotify.com/playlist/6jbdM0Es8NwfDy9Vvjbyzv?si=XA0w8voZS7ySLmplzBtNHQ&utm_source=copy-link" target="_blank"><p>MrBrownie.spotfy.list</p></a>
                 </div>
             </div>
         </div>
         
     </section>
     <footer>
-        <p>Feito por <a href="">IZAIAS_CAMPOS</a></p>
+        <div>Feito por <a href="https://api.whatsapp.com/send?phone=+55 19 99264-5080" target="_blank">IZAIAS_CAMPOS</a></div>
         <hr/>
-        <p>© 2021 Mr. Brownie Company, all rights reserved</p>
+        <span>© 2021 Mr. Brownie Company, all rights reserved</span>
     </footer>
     
+    <div class="scroolButton">
+        <img  class="imgButton" src="./assets/icons/up-arrow1.png" alt="" onclick="scroolUp()">
+    </div>
+
     <script src="./assets/js/script.js"></script>
 </body>
 

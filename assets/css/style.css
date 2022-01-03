@@ -54,7 +54,8 @@ header {
 .banner--text h1 {
     font-size: 60px;
     color: #fff;
-    text-shadow: black 0.1em 0.1em 0.2em;  
+    text-shadow: black 0.1em 0.1em 0.2em; 
+    line-height: 20px; 
 }
 .banner--text h2 {
     font-size: 40px;
@@ -71,10 +72,13 @@ header {
 .flavors--area {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex: 1;
+    height: 100vh;
 }
 .flavors--area img {
     height: 100%;
+    flex: 1;
 }
 .flavors--desc {
     color: #fff;
@@ -113,6 +117,7 @@ header {
 }
 
 .photos--area {
+    
     max-width: 1140px;
     margin: auto;
     background-image: url('../images/guitar4.jpg');
@@ -205,8 +210,8 @@ header {
 }
 .container--rgba {
     background-color: rgba(0, 0, 0, 0.5);
-    flex: 1;
     display: flex;
+    flex: 1;
     color: #fff;
     padding: 50px;
     max-width: 1140px;
@@ -219,7 +224,6 @@ header {
     display: flex;
     align-items: center;
     justify-items: center;
-    
 }
 .trick--step img {
     width: 50px;
@@ -237,6 +241,7 @@ header {
     margin-left: 10px;
 }
 .trick--music {
+    flex: 1;
     display: flex;
     justify-content: center;
 }
@@ -274,8 +279,8 @@ footer {
     background-color: #000;
     color: #fff;
     margin: auto;
-    padding: 40px;
     text-align: center;
+    padding: 20px;
 }
 footer a {
     cursor: pointer;
@@ -295,12 +300,39 @@ footer a {
     height: 4px;
     margin-top: 10px;
 }
+.imgButton {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+}
+
+
+
+
 @media (max-width: 768px) {
+    .logo--area{
+        margin-left: 10px;
+    }
     .menu--mobile {
         display: flex;
     }
-    .menu--area nav a {
-        font-size: 18px;
+    .menu--area {
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 165px;
+        display: none;
+        transition: all ease 2s;
+    }
+    .menu--area nav {
+        display: flex;
+        flex-direction: column;
     }
     .banner--text h1 {
         font-size: 50px; 
@@ -338,14 +370,16 @@ footer a {
     .logo--area img {
         margin-left: -80px;
     }
-    .menu--area nav a {
-        display: flex;
-        font-size: 15px;
+    .menu--area {
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 165px;
+        display: none;
+        transition: all ease 2s;
     }
     .menu--area nav {
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.8);
-        margin-left: -30px;
+        display: flex;
+        flex-direction: column;
     }
     .banner--text h1 {
         font-size: 35px; 
@@ -402,14 +436,16 @@ footer a {
     .logo--area img {
         margin-left: -60px;
     }
-    .menu--area nav a {
-        display: flex;
-        font-size: 15px;
+    .menu--area {
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 165px;
+        display: none;
+        transition: all ease 2s;
     }
     .menu--area nav {
-        position:absolute;
-        background-color: rgba(0, 0, 0, 0.8);
-        margin-left: -60px;
+        display: flex;
+        flex-direction: column;
     }
     .banner--text h1 {
         font-size: 27px; 
