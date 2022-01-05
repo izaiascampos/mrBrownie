@@ -27,6 +27,7 @@ function verifyScrool(){
         document.querySelector('.imgButton').style.display = 'none';
     }
 }
+
 window.addEventListener('scroll', verifyScrool);
 
 function toggleMenu() {
@@ -36,3 +37,8 @@ function toggleMenu() {
        document.querySelector('.menu--area').style.display = 'none'
     }
 }
+
+document.querySelector('#cardapio--link').setAttribute('href', '#cardapio');
+document.querySelector('#fotos--link').setAttribute('href', '#fotos');
+document.querySelector('#contato--link').setAttribute('href', '#contato');
+document.querySelector('#dicas--link').setAttribute('href', '#dicas');

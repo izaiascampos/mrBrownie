@@ -2,10 +2,12 @@
 * {
     box-sizing: border-box;
     font-family:'Architects Daughter', cursive;
+    scroll-behavior: smooth;
 }
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 header {
     max-width: 1140px;
@@ -306,14 +308,29 @@ footer a {
     background-color: #fff;
     border-radius: 50%;
     position: fixed;
-    right: 20px;
+    right: 10px;
     bottom: 10px;
     cursor: pointer;
     display: none;
     z-index: 999;
 }
 
-
+.social-fixo {
+    position: fixed;
+    left: 10px;
+    bottom: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.social-fixo-area img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border:1px solid white;
+    background-color: #fff;
+}
 
 
 @media (max-width: 768px) {
