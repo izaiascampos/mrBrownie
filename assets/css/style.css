@@ -119,31 +119,86 @@ header {
 }
 
 .photos--area {
-    
     max-width: 1140px;
     margin: auto;
+    display: flex;
     background-image: url('../images/guitar4.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.photos {
-    margin: auto;
-    max-width: 700px;
+.photo--area {
+    margin: 20px 10px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.small-img{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.photos-row {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 40px;
-    padding-bottom: 40px;
 }
-.photo--area {
-    max-width: 300px;
-    height: 300px;
-    margin: 4px;
-    border: 1px solid black;
+.modal {
+    visibility: hidden;
+    transition: visibility 0.4s linear, opacity 0.5s linear;
+    position:fixed;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+#modal-img {
+    width: 50vw;
+    height: 100%;
+    border-radius: 30px;
+    transition: all linear .3s;
+}
+.modal-active {
+    visibility: visible;
+    opacity: 1;
+}
+.modal-active #modal-img {
+    transform: scale(1);
+}
+.botao-modal-close {
+    position: absolute; 
+    bottom: 91%;   
+    background-color: #ca3d36;
+    color: #FFF;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
     cursor: pointer;
 }
+
 .photo--desc {
     display: inline;
     position:absolute;
@@ -157,14 +212,6 @@ header {
 }
 .photo--desc:hover {
     color: #ca3d36;
-}
-.photo {
-    width: 300px;
-    height: 298px;
-}
-.photo img{
-    width: 300px;
-    height: 100%;
 }
 .social {
     margin: auto;
@@ -312,7 +359,7 @@ footer a {
     bottom: 10px;
     cursor: pointer;
     display: none;
-    z-index: 999;
+    z-index: 998;
 }
 
 .social-fixo {
@@ -325,15 +372,21 @@ footer a {
     justify-content: space-around;
 }
 .social-fixo-area img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     border:1px solid white;
     background-color: #fff;
+    margin-top: 3px;
 }
 
-
 @media (max-width: 768px) {
+    #modal-img {
+        width: 95vw;
+        height: 100%;
+        border-radius: 30px;
+        transition: all linear .3s;
+    }
     .logo--area{
         margin-left: 10px;
     }

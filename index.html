@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Mr.Brownie do rock!/sobremesas/doces.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <title>Mr Brownie do Rock!</title>
+    <title>Mr. Brownie do Rock!</title>
 </head>
 <body>
     
@@ -24,7 +25,7 @@
             </nav>
         </div>
 
-        <div class="menu--mobile" onclick="toggleMenu()">
+        <div class="menu--mobile">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
@@ -70,50 +71,48 @@
                 </div>
                         
         </div>
+
     </section>
 
-    <section class="photos--area" id="fotos">
+    
 
-        <div class="photos">
+    <section class="photos--area" id="fotos">
+        
+        <div class="modal">
+            <div class="modal-content">
+                <img src="./assets/images/1.jpg" id="modal-img" alt="imagem selecionada ampliada">
+            </div>
+            <div class="botao-modal-close">X</div>
+        </div>
+
+        <div class="photos-row"> 
+            
             <div class="photo--area">
                 <div class="photo--desc">Castanha de Cajú</div>
-                <div class="photo">
-                    <img src="./assets/images/1.jpg" alt="brownie castanha de caju">
-                </div>
+                <img class="small-img" src="./assets/images/1.jpg" alt="brownie castanha de caju">
             </div>
             <div class="photo--area">
                 <div class="photo--desc">OVOMALTINE</div>
-                <div class="photo">
-                    <img src="./assets/images/2.jpg" alt="brownie ovomaltine">
-                </div>
+                <img class="small-img" src="./assets/images/2.jpg" alt="brownie ovomaltine">
             </div>
             <div class="photo--area">
-                <div class="photo--desc">PAÇOCA</div>
-                <div class="photo">
-                    <img src="./assets/images/3.jpg" alt="brownie paçoca">
-                </div>
+                <div class="photo--desc">PAÇOCA</div>               
+                <img class="small-img" src="./assets/images/3.jpg" alt="brownie paçoca">                
             </div>
             <div class="photo--area">
                 <div class="photo--desc">NOZES</div>
-                <div class="photo">
-                    <img src="./assets/images/4.jpg" alt="brownie de nozes">
-                </div>
+                <img class="small-img" src="./assets/images/4.jpg" alt="brownie de nozes">                   
             </div>
             <div class="photo--area">
                 <div class="photo--desc">OREO</div>
-                <div class="photo">
-                    <img src="./assets/images/5.jpg" alt="brownie de oreo">
-                </div>
+                <img class="small-img" src="./assets/images/5.jpg" alt="brownie de oreo">
             </div>
             <div class="photo--area">
                 <div class="photo--desc">BIS</div>
-                <div class="photo">
-                    <img src="./assets/images/6.jpg" alt="brownie de bis">
-                </div>
+                <img class="small-img" src="./assets/images/6.jpg" alt="brownie de bis">
             </div>
-    
-        </div>
-        
+        </div> 
+                
     </section>
 
     <section class="social" id="contato">
@@ -163,13 +162,13 @@
         
     </section>
     <footer>
-        <div>Feito por <a href="https://api.whatsapp.com/send?phone=+55 19 99264-5080" target="_blank" rel="external">IZAIAS_CAMPOS</a></div>
+        <div>Made by <a href="https://api.whatsapp.com/send?phone=+55 19 99264-5080" target="_blank" rel="external">IZAIAS CAMPOS</a></div>
         <hr/>
         <span>© 2021 Mr. Brownie Company, all rights reserved</span>
     </footer>
     
     <div class="scroolButton">
-        <img  class="imgButton" src="./assets/icons/up-arrow1.png" alt="botao para subir a tela" onclick="scroolUp()">
+        <img  class="imgButton" src="./assets/icons/up-arrow1.png" alt="botao para subir a tela">
     </div>
 
     <div class="social-fixo">
@@ -183,8 +182,7 @@
             <a href="https://api.whatsapp.com/send?phone=+55 19 99380-3148&text=Olá%20tem%20Brownie%20do%20Rock%20hj?" target="_blank" rel="external"><img src="./assets/icons/whatsapp.png" alt="link whatsapp"></a>
         </div>
     </div>
-
+    
     <script src="./assets/js/script.js"></script>
 </body>
-
 </html>
